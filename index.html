@@ -22,14 +22,14 @@ body{font-family:'Lora',Georgia,serif;background:#1a3328;color:#f5ead6;min-heigh
 .picker-wrap{max-width:640px;margin:0 auto;padding:60px 18px}
 .picker-title{font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,34px);text-align:center;margin-bottom:6px}
 .picker-sub{text-align:center;font-size:13px;color:rgba(245,234,214,.5);margin-bottom:34px}
-.pick-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;margin-bottom:30px}
+.pick-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:30px}
 .pick-card{padding:16px 14px;border:1px solid rgba(245,234,214,.15);border-radius:10px;background:rgba(39,75,58,.32);cursor:pointer;text-align:center;transition:all .15s;position:relative}
 .pick-card:hover:not(.lk){border-color:#c4622d;background:rgba(39,75,58,.6)}
 .pick-card.on{border-color:#d4a843;background:rgba(212,168,67,.14)}
 .pick-card.lk{opacity:.4;cursor:not-allowed}
 .pick-card-lock{position:absolute;top:8px;right:9px;font-size:12px}
 .pick-card-code{font-size:10px;letter-spacing:.18em;color:rgba(245,234,214,.32);text-transform:uppercase;margin-bottom:3px}
-.pick-card-name{font-family:'Playfair Display',serif;font-size:16px}
+.pick-card-name{font-family:'Playfair Display',serif;font-size:15px}
 .pick-cta{display:flex;justify-content:center;margin-top:8px}
 .b-pri{padding:11px 24px;background:#c4622d;border:none;border-radius:6px;color:#f5ead6;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;cursor:pointer}
 .b-pri:hover{background:#d4784a}
@@ -46,14 +46,11 @@ body{font-family:'Lora',Georgia,serif;background:#1a3328;color:#f5ead6;min-heigh
 .status-bar b{color:#f5ead6}
 .status-btn{padding:5px 11px;border-radius:5px;border:1px solid rgba(245,234,214,.25);background:transparent;color:rgba(245,234,214,.7);font-size:11px;cursor:pointer;font-family:'Lora',serif;white-space:nowrap}
 .status-btn:hover{border-color:#c4622d;color:#d4784a}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-.chip{padding:5px 12px;border-radius:20px;border:1px solid rgba(245,234,214,.13);background:transparent;color:rgba(245,234,214,.42);font-family:'Lora',serif;font-size:12px;cursor:pointer}
-.chip.on{background:rgba(196,98,45,.18);border-color:#c4622d;color:#f5ead6}
-.fmt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:7px;margin-bottom:14px}
-.fmt-chip{padding:8px 11px;border-radius:8px;border:1px solid rgba(245,234,214,.13);background:rgba(39,75,58,.28);color:rgba(245,234,214,.55);font-family:'Lora',serif;font-size:12.5px;cursor:pointer;display:flex;align-items:center;gap:7px}
-.fmt-chip.on{background:rgba(212,168,67,.14);border-color:#d4a843;color:#f5ead6}
-.fmt-box{width:14px;height:14px;border-radius:3px;border:1px solid rgba(245,234,214,.3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px}
-.fmt-chip.on .fmt-box{background:#d4a843;border-color:#d4a843;color:#1a3328}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.chip{padding:7px 13px;border-radius:8px;border:1px solid rgba(245,234,214,.13);background:rgba(39,75,58,.28);color:rgba(245,234,214,.55);font-family:'Lora',serif;font-size:12.5px;cursor:pointer;display:flex;align-items:center;gap:7px}
+.chip.on{background:rgba(212,168,67,.14);border-color:#d4a843;color:#f5ead6}
+.chip-box{width:14px;height:14px;border-radius:3px;border:1px solid rgba(245,234,214,.3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px}
+.chip.on .chip-box{background:#d4a843;border-color:#d4a843;color:#1a3328}
 .start-row{display:flex;gap:10px;align-items:center;margin:16px 0 6px;flex-wrap:wrap}
 .qhdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px}
 .qstat-pill{font-size:13px;color:rgba(245,234,214,.52);margin-right:13px}
@@ -70,20 +67,22 @@ body{font-family:'Lora',Georgia,serif;background:#1a3328;color:#f5ead6;min-heigh
 .qtype{font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:rgba(196,98,45,.18);color:#d4784a}
 .qtype.dim{background:transparent;color:rgba(245,234,214,.32)}
 .qloc{font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:rgba(74,143,204,.16);color:#7fb3e0}
+.qhint{font-size:11px;color:rgba(212,168,67,.75);font-style:italic;margin-bottom:8px}
+.qimg-wrap{margin-bottom:16px;border-radius:10px;overflow:hidden;border:1px solid rgba(245,234,214,.15);background:rgba(0,0,0,.2);min-height:60px}
+.qimg{display:block;width:100%;max-height:340px;object-fit:contain;background:rgba(0,0,0,.25)}
+.qimg-err{padding:18px;text-align:center;font-size:12px;color:rgba(245,234,214,.35);font-style:italic}
 .question{font-family:'Playfair Display',serif;font-size:clamp(15px,2vw,19px);line-height:1.56;margin-bottom:20px}
 .question em{font-style:normal;color:#d4a843;font-weight:700}
 .opts{display:grid;gap:8px}
 .opt{padding:11px 15px;border:1px solid rgba(245,234,214,.13);border-radius:8px;background:rgba(39,75,58,.25);color:rgba(245,234,214,.72);font-family:'Lora',serif;font-size:14px;text-align:left;cursor:pointer;display:flex;align-items:flex-start;gap:8px;width:100%}
 .opt-l{font-size:10px;color:rgba(245,234,214,.26);margin-top:2px;min-width:13px}
+.opt-cb{width:15px;height:15px;border-radius:4px;border:1px solid rgba(245,234,214,.35);flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:10px;color:#1a3328}
+.opt.cbon .opt-cb{background:#d4a843;border-color:#d4a843}
 .opt:hover:not(:disabled){border-color:#c4622d;background:rgba(196,98,45,.09);color:#f5ead6}
 .opt.ok{border-color:#4a8c5c;background:rgba(74,140,92,.14);color:#96dca0}
 .opt.no{border-color:#b5312c;background:rgba(181,49,44,.12);color:#e0a8a8}
+.opt.miss{border-color:#d4a843;background:rgba(212,168,67,.1);color:#e8cf8a}
 .opt:disabled{cursor:default}
-.tf-row{display:flex;gap:10px}
-.tf-btn{flex:1;padding:16px;border-radius:9px;border:1px solid rgba(245,234,214,.18);background:rgba(39,75,58,.25);color:rgba(245,234,214,.8);font-family:'Playfair Display',serif;font-size:16px;cursor:pointer}
-.tf-btn:hover:not(:disabled){border-color:#c4622d}
-.tf-btn.ok{border-color:#4a8c5c;background:rgba(74,140,92,.14);color:#96dca0}
-.tf-btn.no{border-color:#b5312c;background:rgba(181,49,44,.12);color:#e0a8a8}
 .farea{width:100%;background:rgba(26,51,40,.6);border:1px solid rgba(245,234,214,.22);border-radius:8px;padding:12px 14px;color:#f5ead6;font-family:'Lora',serif;font-size:15px;outline:none;resize:vertical;min-height:105px;line-height:1.6}
 .farea:focus{border-color:#c4622d}
 .farea:disabled{opacity:.68}
@@ -108,14 +107,23 @@ body{font-family:'Lora',Georgia,serif;background:#1a3328;color:#f5ead6;min-heigh
 <script>
 /* =========================================================================
    KOZAK TRAINING HUB — standalone (GitHub Pages)
-   Questions are read live from a published Google Sheet (CSV).
-   To point at a different sheet/tab, change SHEET_ID and GID below.
-   The sheet must be shared as "Anyone with the link -> Viewer".
+   Questions are read live from a published Google Sheet (CSV via gviz).
+   Sheet must be shared as "Anyone with the link -> Viewer".
+
+   CSV columns expected (header row, any case):
+   ID | Format | Topics | Positions | Location | Item | Question |
+   OptionA | OptionB | OptionC | OptionD | Correct | ModelAnswer | Image | Status
+
+   Format: CS (choose single) / CM (choose multiple) / CI (choose incorrect) / OA (open answer)
+   Topics: comma-separated, any of TOPIC_LIST below
+   Positions: comma-separated position codes, blank = applies to all positions
+   Correct: CS/CI -> single letter (A-D). CM -> comma-separated letters (A,C). OA -> blank.
+   Image: optional Google Drive share link or direct image URL.
+   Status: Published / Draft — only Published rows are served.
    ========================================================================= */
 const SHEET_ID = "1SeqV6N7VU1OF08C5jpUD5gcWYGHxp4jw2iiyyYPRH0M";
 const GID = "1760260323";
 function csvUrl(){
-  // cache-bust so managers' edits show up promptly on Refresh
   return "https://docs.google.com/spreadsheets/d/"+SHEET_ID+"/gviz/tq?tqx=out:csv&gid="+GID+"&_="+Date.now();
 }
 
@@ -129,45 +137,72 @@ const LOCATIONS=[
 const POSITIONS=[
   {code:"server",name:"Server"},
   {code:"bar",name:"Bar"},
-  {code:"linecook",name:"Line Cook"},
-  {code:"cook",name:"Cook"},
-  {code:"baker",name:"Baker"},
-  {code:"dishwasher",name:"Dishwasher"},
   {code:"lavka",name:"Lavka"},
+  {code:"welcome",name:"Welcome / Host"},
+  {code:"hot",name:"Hot Line"},
+  {code:"cold",name:"Cold Line"},
+  {code:"baker",name:"Baker"},
+  {code:"driver",name:"Driver"},
+  {code:"cook",name:"Cook"},
+  {code:"bread",name:"Bread"},
 ];
-const FORMATS=[
-  {code:"mc",label:"Multiple Choice",icon:"\u2630"},
-  {code:"truefalse",label:"True / False",icon:"\u2696"},
-  {code:"mistake",label:"Spot the Mistake",icon:"\u26A0"},
-  {code:"explain",label:"Explain a Dish",icon:"\uD83C\uDF7D"},
-  {code:"presentation",label:"Table Presentation",icon:"\uD83D\uDECE"},
-  {code:"scenario",label:"Guest Scenario",icon:"\uD83D\uDCAC"},
+const TOPIC_LIST=[
+  "Explain a dish",
+  "Describe a dish",
+  "Guest Scenario",
+  "General menu questions",
+  "Wine List knowledge",
+  "Wine Service",
+  "What's the dish in the photo",
+  "Operations",
+  "Non alcoholic drinks",
+  "Cocktails and other spirits",
 ];
-const FORMAT_LABEL=Object.fromEntries(FORMATS.map(f=>[f.code,f.label]));
-const CATS=["All","Dishes","Drinks","Wines","Bakery","Promos","Service"];
-const FREE_TYPES=["mistake","explain","presentation","scenario"];
+const FORMAT_LABEL={CS:"Choose One",CM:"Choose Multiple",CI:"Choose the Incorrect One",OA:"Open Answer"};
+const LETTERS=["A","B","C","D"];
 
 /* ---- state ---- */
 const S={
   loc:null,pos:null,
   bank:[],bankTotal:0,bankLoaded:false,bankLoading:false,bankError:"",
-  selTypes:FORMATS.map(f=>f.code),catFilter:"All",
+  selTopics:TOPIC_LIST.slice(),
   started:false,done:false,pool:[],idx:0,
   sel:null,free:"",revealed:false,
+  cmSelected:new Set(),cmSubmitted:false,
   score:{c:0,t:0},streak:0,
 };
 
 /* ---- helpers ---- */
 function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
-function allowEm(s){ // allow only <em> for emphasis in question text
-  return esc(s).replace(/&lt;em&gt;/g,"<em>").replace(/&lt;\/em&gt;/g,"</em>");
-}
+function allowEm(s){return esc(s).replace(/&lt;em&gt;/g,"<em>").replace(/&lt;\/em&gt;/g,"</em>");}
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-function shuffleOpts(q){if(q.type!=="mc"||!q.opts)return q;const p=q.opts.map((o,i)=>({o,c:i===q.ans}));const s=shuffle(p);return Object.assign({},q,{opts:s.map(x=>x.o),ans:s.findIndex(x=>x.c)});}
 function pct(c,t){return t>0?Math.round((c/t)*100):0;}
 function norm(s){return (s||"").trim();}
+function setEq(a,b){if(a.length!==b.length)return false;const sa=[...a].sort(),sb=[...b].sort();return sa.every((v,i)=>v===sb[i]);}
 
-/* ---- CSV parsing (handles quoted fields, commas, newlines) ---- */
+// shuffle options while keeping track of which (possibly multiple) indices are correct
+function shuffleOpts(q){
+  if(!["CS","CM","CI"].includes(q.format)||!q.opts||!q.opts.length)return q;
+  const correctSet=new Set(q.ansIdx);
+  const paired=q.opts.map((o,i)=>({o,c:correctSet.has(i)}));
+  const s=shuffle(paired);
+  const opts=s.map(x=>x.o);
+  const ansIdx=s.map((x,i)=>x.c?i:-1).filter(i=>i!==-1);
+  return Object.assign({},q,{opts,ansIdx});
+}
+
+// convert a Google Drive share link to a direct, hotlinkable image URL.
+// passes through any other URL unchanged.
+function driveToDirectUrl(url){
+  if(!url)return "";
+  url=url.trim();
+  let m=url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+  if(!m)m=url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+  if(!m)return url;
+  return "https://drive.google.com/uc?export=view&id="+m[1];
+}
+
+/* ---- CSV parsing ---- */
 function parseCSV(text){
   const rows=[];let row=[];let field="";let i=0;let inQ=false;
   while(i<text.length){
@@ -198,13 +233,13 @@ async function loadBank(){
     if(rows.length<2){S.bank=[];S.bankTotal=0;S.bankLoaded=true;S.bankLoading=false;render();return;}
     const header=rows[0].map(h=>norm(h).toLowerCase());
     const col=n=>header.indexOf(n);
-    const ci={type:col("type"),cat:col("category"),positions:col("positions"),loc:col("location"),item:col("item"),question:col("question"),a:col("optiona"),b:col("optionb"),cc:col("optionc"),dd:col("optiond"),correct:col("correct"),model:col("modelanswer"),status:col("status"),id:col("id")};
-    if(ci.type<0||ci.status<0) throw new Error("Sheet headers don't match. Found: "+header.join(", "));
+    const ci={id:col("id"),format:col("format"),topics:col("topics"),positions:col("positions"),loc:col("location"),item:col("item"),question:col("question"),a:col("optiona"),b:col("optionb"),cc:col("optionc"),dd:col("optiond"),correct:col("correct"),model:col("modelanswer"),image:col("image"),status:col("status")};
+    if(ci.format<0||ci.status<0) throw new Error("Sheet headers don't match. Found: "+header.join(", "));
     let total=0;const out=[];
     for(let n=1;n<rows.length;n++){
       const rrow=rows[n];
       const g=k=>ci[k]>=0?norm(rrow[ci[k]]):"";
-      if(!g("type"))continue;
+      if(!g("format"))continue;
       total++;
       if(g("status").toLowerCase()!=="published")continue;
       const rowLoc=g("loc")||"All";
@@ -214,17 +249,20 @@ async function loadBank(){
         const list=posRaw.split(/[,;]/).map(x=>x.trim().toLowerCase()).filter(Boolean);
         if(list.length&&!list.includes(S.pos))continue;
       }
-      const type=g("type").toLowerCase();
-      const q={id:g("id")||("row"+n),type:type,cat:g("cat")||"Service",item:g("item")};
+      const format=g("format").toUpperCase();
+      const topics=g("topics").split(/[,;]/).map(t=>t.trim()).filter(Boolean);
+      const q={id:g("id")||("row"+n),format,topics,cat:topics[0]||"",item:g("item"),q:g("question")||g("item")};
       if(rowLoc!=="All")q.loc=rowLoc;
-      q.q=g("question")||g("item");
-      if(type==="mc"){
+      const img=driveToDirectUrl(g("image"));
+      if(img)q.image=img;
+      if(format==="CS"||format==="CI"){
         q.opts=[g("a"),g("b"),g("cc"),g("dd")].filter(o=>o!=="");
-        q.ans=({A:0,B:1,C:2,D:3})[g("correct").toUpperCase()];
-        if(q.ans===undefined)q.ans=0;
-      }else if(type==="truefalse"){
-        q.ans=g("correct").toUpperCase()==="TRUE";
-      }else{
+        const letter=g("correct").toUpperCase();
+        q.ansIdx=LETTERS.indexOf(letter)>=0?[LETTERS.indexOf(letter)]:[0];
+      }else if(format==="CM"){
+        q.opts=[g("a"),g("b"),g("cc"),g("dd")].filter(o=>o!=="");
+        q.ansIdx=g("correct").toUpperCase().split(/[,;]/).map(l=>LETTERS.indexOf(l.trim())).filter(i=>i>=0);
+      }else{ // OA
         q.modelAnswer=g("model");
       }
       out.push(q);
@@ -238,25 +276,35 @@ async function loadBank(){
 
 /* ---- quiz actions ---- */
 function beginQuiz(){
-  const types=S.selTypes.length?S.selTypes:FORMATS.map(f=>f.code);
-  const built=shuffle(S.bank.filter(q=>types.includes(q.type)&&(S.catFilter==="All"||q.cat===S.catFilter))).map(shuffleOpts);
-  S.pool=built;S.idx=0;S.sel=null;S.free="";S.revealed=false;
+  const topics=S.selTopics.length?S.selTopics:TOPIC_LIST;
+  const built=shuffle(S.bank.filter(q=>q.topics.some(t=>topics.includes(t)))).map(shuffleOpts);
+  S.pool=built;S.idx=0;resetQState();
   S.score={c:0,t:0};S.streak=0;S.done=false;S.started=true;render();
 }
-function answerMC(i){
+function resetQState(){S.sel=null;S.free="";S.revealed=false;S.cmSelected=new Set();S.cmSubmitted=false;}
+
+function answerSingle(i){ // CS / CI
   if(S.sel!==null)return;
-  S.sel=i;const cur=S.pool[S.idx];const ok=i===cur.ans;
+  S.sel=i;const cur=S.pool[S.idx];const ok=cur.ansIdx.includes(i);
   S.score={c:S.score.c+(ok?1:0),t:S.score.t+1};S.streak=ok?S.streak+1:0;render();
 }
-function answerTF(v){
-  if(S.sel!==null)return;
-  S.sel=v;const cur=S.pool[S.idx];const ok=v===cur.ans;
-  S.score={c:S.score.c+(ok?1:0),t:S.score.t+1};S.streak=ok?S.streak+1:0;render();
+function toggleCM(i){
+  if(S.cmSubmitted)return;
+  if(S.cmSelected.has(i))S.cmSelected.delete(i);else S.cmSelected.add(i);
+  render();
+}
+function submitCM(){
+  if(S.cmSubmitted)return;
+  S.cmSubmitted=true;
+  const cur=S.pool[S.idx];
+  const ok=setEq([...S.cmSelected],cur.ansIdx);
+  S.score={c:S.score.c+(ok?1:0),t:S.score.t+1};S.streak=ok?S.streak+1:0;
+  render();
 }
 function revealFree(){ S.revealed=true; render(); }
 function nextQ(){
   if(S.idx+1>=S.pool.length){S.done=true;render();return;}
-  S.idx++;S.sel=null;S.free="";S.revealed=false;render();
+  S.idx++;resetQState();render();
 }
 
 /* ---- rendering ---- */
@@ -327,30 +375,22 @@ function renderStatus(){
 
 function renderSetup(){
   const wrap=document.createElement("div");
-  wrap.appendChild(el('<div class="slbl">Quiz Formats</div>'));
-  const fg=el('<div class="fmt-grid"></div>');
-  const allOn=S.selTypes.length===FORMATS.length;
-  const allChip=el('<div class="fmt-chip'+(allOn?' on':'')+'"><span class="fmt-box">'+(allOn?'\u2713':'')+'</span>All Formats</div>');
-  allChip.onclick=()=>{S.selTypes=allOn?[]:FORMATS.map(f=>f.code);render();};
-  fg.appendChild(allChip);
-  FORMATS.forEach(f=>{
-    const on=S.selTypes.includes(f.code);
-    const c=el('<div class="fmt-chip'+(on?' on':'')+'"><span class="fmt-box">'+(on?'\u2713':'')+'</span>'+f.icon+' '+f.label+'</div>');
-    c.onclick=()=>{S.selTypes=on?S.selTypes.filter(x=>x!==f.code):S.selTypes.concat([f.code]);render();};
-    fg.appendChild(c);
+  wrap.appendChild(el('<div class="slbl">Topics</div>'));
+  const tg=el('<div class="chips"></div>');
+  const allOn=S.selTopics.length===TOPIC_LIST.length;
+  const allChip=el('<div class="chip'+(allOn?' on':'')+'"><span class="chip-box">'+(allOn?'\u2713':'')+'</span>All Topics</div>');
+  allChip.onclick=()=>{S.selTopics=allOn?[]:TOPIC_LIST.slice();render();};
+  tg.appendChild(allChip);
+  TOPIC_LIST.forEach(t=>{
+    const on=S.selTopics.includes(t);
+    const c=el('<div class="chip'+(on?' on':'')+'"><span class="chip-box">'+(on?'\u2713':'')+'</span>'+esc(t)+'</div>');
+    c.onclick=()=>{S.selTopics=on?S.selTopics.filter(x=>x!==t):S.selTopics.concat([t]);render();};
+    tg.appendChild(c);
   });
-  wrap.appendChild(fg);
-  wrap.appendChild(el('<div class="slbl">Category</div>'));
-  const cg=el('<div class="chips"></div>');
-  CATS.forEach(c=>{
-    const chip=el('<button class="chip'+(S.catFilter===c?' on':'')+'">'+c+'</button>');
-    chip.onclick=()=>{S.catFilter=c;render();};
-    cg.appendChild(chip);
-  });
-  wrap.appendChild(cg);
+  wrap.appendChild(tg);
   const row=el('<div class="start-row"></div>');
   const start=el('<button class="b-pri">Start Quiz \u2192</button>');
-  if(S.selTypes.length===0||S.bankLoading||S.bank.length===0)start.disabled=true;
+  if(S.selTopics.length===0||S.bankLoading||S.bank.length===0)start.disabled=true;
   start.onclick=beginQuiz;
   row.appendChild(start);
   wrap.appendChild(row);
@@ -368,48 +408,73 @@ function renderQuestion(){
   wrap.appendChild(hd);
   wrap.appendChild(el('<div class="pbar-row"><div class="pbar-track"><div class="pbar-fill" style="width:'+pct(S.idx,S.pool.length)+'%"></div></div><div class="pbar-lbl">'+pct(S.idx,S.pool.length)+'%</div></div>'));
   const card=document.createElement("div");card.className="qcard";
-  let meta='<div class="qmeta"><span class="qcat">'+esc(cur.cat)+'</span><span class="qtype">'+esc(FORMAT_LABEL[cur.type]||cur.type)+'</span>';
+  let meta='<div class="qmeta"><span class="qcat">'+esc(cur.topics[0]||"")+'</span><span class="qtype">'+esc(FORMAT_LABEL[cur.format]||cur.format)+'</span>';
   if(cur.item)meta+='<span class="qtype dim">\u00B7 '+esc(cur.item)+'</span>';
   if(cur.loc)meta+='<span class="qloc">'+esc(cur.loc)+' only</span>';
   meta+='</div>';
   card.appendChild(el(meta));
+
+  if(cur.format==="CM")card.appendChild(el('<div class="qhint">Select ALL that apply, then Submit.</div>'));
+  if(cur.format==="CI")card.appendChild(el('<div class="qhint">Pick the ONE statement that is incorrect.</div>'));
+
+  if(cur.image){
+    const iw=el('<div class="qimg-wrap"></div>');
+    const img=document.createElement("img");
+    img.className="qimg";img.src=cur.image;img.alt="";
+    img.onerror=()=>{iw.innerHTML='<div class="qimg-err">Image couldn\\'t load \u2014 check the Drive link is shared "Anyone with the link".</div>';};
+    iw.appendChild(img);
+    card.appendChild(iw);
+  }
+
   card.appendChild(el('<div class="question">'+allowEm(cur.q)+'</div>'));
 
-  if(cur.type==="mc"){
+  if(cur.format==="CS"||cur.format==="CI"){
     const opts=el('<div class="opts"></div>');
     cur.opts.forEach((o,i)=>{
       let cls="opt";
-      if(S.sel!==null){ if(i===cur.ans)cls+=" ok"; else if(i===S.sel)cls+=" no"; }
-      const b=el('<button class="'+cls+'"><span class="opt-l">'+["A","B","C","D"][i]+'</span><span>'+esc(o)+'</span></button>');
-      if(S.sel!==null)b.disabled=true; else b.onclick=()=>answerMC(i);
+      if(S.sel!==null){ if(cur.ansIdx.includes(i))cls+=" ok"; else if(i===S.sel)cls+=" no"; }
+      const b=el('<button class="'+cls+'"><span class="opt-l">'+LETTERS[i]+'</span><span>'+esc(o)+'</span></button>');
+      if(S.sel!==null)b.disabled=true; else b.onclick=()=>answerSingle(i);
       opts.appendChild(b);
     });
     card.appendChild(opts);
     if(S.sel!==null){
-      const ok=S.sel===cur.ans;
-      card.appendChild(el('<div class="fb '+(ok?'fb-ok':'fb-no')+'"><strong>'+(ok?'\u2713 Correct':'\u2717 Not quite')+'</strong>'+(ok?'Nice work.':'The correct answer is '+["A","B","C","D"][cur.ans]+': '+esc(cur.opts[cur.ans]))+'</div>'));
+      const ok=cur.ansIdx.includes(S.sel);
+      const correctText=cur.ansIdx.map(i=>LETTERS[i]+": "+cur.opts[i]).join("; ");
+      card.appendChild(el('<div class="fb '+(ok?'fb-ok':'fb-no')+'"><strong>'+(ok?'\u2713 Correct':'\u2717 Not quite')+'</strong>'+(ok?'Nice work.':'The correct answer is '+esc(correctText))+'</div>'));
       const nb=el('<button class="b-nxt">Next \u2192</button>');nb.onclick=nextQ;card.appendChild(nb);
     }else{
       const br=el('<div class="brow"></div>');const sk=el('<button class="b-skip">Skip</button>');sk.onclick=nextQ;br.appendChild(sk);card.appendChild(br);
     }
-  }else if(cur.type==="truefalse"){
-    const row=el('<div class="tf-row"></div>');
-    [true,false].forEach(v=>{
-      let cls="tf-btn";
-      if(S.sel!==null){ if(v===cur.ans)cls+=" ok"; else if(v===S.sel)cls+=" no"; }
-      const b=el('<button class="'+cls+'">'+(v?"TRUE":"FALSE")+'</button>');
-      if(S.sel!==null)b.disabled=true; else b.onclick=()=>answerTF(v);
-      row.appendChild(b);
+  }else if(cur.format==="CM"){
+    const opts=el('<div class="opts"></div>');
+    cur.opts.forEach((o,i)=>{
+      let cls="opt";
+      const sel=S.cmSelected.has(i);
+      if(S.cmSubmitted){
+        if(cur.ansIdx.includes(i)&&sel)cls+=" ok";
+        else if(!cur.ansIdx.includes(i)&&sel)cls+=" no";
+        else if(cur.ansIdx.includes(i)&&!sel)cls+=" miss";
+      }else if(sel)cls+=" cbon";
+      const b=el('<button class="'+cls+'"><span class="opt-cb">'+(sel?'\u2713':'')+'</span><span class="opt-l">'+LETTERS[i]+'</span><span>'+esc(o)+'</span></button>');
+      if(S.cmSubmitted)b.disabled=true; else b.onclick=()=>toggleCM(i);
+      opts.appendChild(b);
     });
-    card.appendChild(row);
-    if(S.sel!==null){
-      const ok=S.sel===cur.ans;
-      card.appendChild(el('<div class="fb '+(ok?'fb-ok':'fb-no')+'"><strong>'+(ok?'\u2713 Correct':'\u2717 Not quite')+'</strong>The correct answer is '+(cur.ans?"TRUE":"FALSE")+'.</div>'));
-      const nb=el('<button class="b-nxt">Next \u2192</button>');nb.onclick=nextQ;card.appendChild(nb);
+    card.appendChild(opts);
+    if(!S.cmSubmitted){
+      const br=el('<div class="brow"></div>');
+      const sub=el('<button class="b-pri">Submit</button>');
+      if(S.cmSelected.size===0)sub.disabled=true;
+      sub.onclick=submitCM;
+      const sk=el('<button class="b-skip">Skip</button>');sk.onclick=nextQ;
+      br.appendChild(sub);br.appendChild(sk);card.appendChild(br);
     }else{
-      const br=el('<div class="brow"></div>');const sk=el('<button class="b-skip">Skip</button>');sk.onclick=nextQ;br.appendChild(sk);card.appendChild(br);
+      const ok=setEq([...S.cmSelected],cur.ansIdx);
+      const correctText=cur.ansIdx.map(i=>LETTERS[i]).join(", ");
+      card.appendChild(el('<div class="fb '+(ok?'fb-ok':'fb-no')+'"><strong>'+(ok?'\u2713 Correct':'\u2717 Not quite')+'</strong>'+(ok?'You got all of them.':'The correct selection was '+esc(correctText)+'.')+'</div>'));
+      const nb=el('<button class="b-nxt">Next \u2192</button>');nb.onclick=nextQ;card.appendChild(nb);
     }
-  }else{ // free-text types: self-graded against the model answer
+  }else{ // OA
     const ta=el('<textarea class="farea" rows="5" placeholder="Write your answer \u2014 be as thorough as you would be on the floor\u2026"></textarea>');
     ta.value=S.free;
     if(S.revealed)ta.disabled=true;
@@ -435,7 +500,7 @@ function renderSummary(){
   const card=el('<div class="qcard sum"><div style="font-size:42px;margin-bottom:8px">\uD83C\uDF3B</div><div style="font-family:\'Playfair Display\',serif;font-size:26px;margin-bottom:6px">Round Complete</div><div style="font-size:13px;color:rgba(245,234,214,.5);margin-bottom:18px">'+S.score.t+' questions this round</div><div class="sum-pct">'+pct(S.score.c,S.score.t)+'%</div><div style="font-size:12px;color:rgba(245,234,214,.4);margin-bottom:22px">'+S.score.c+' correct out of '+S.score.t+'</div></div>');
   const br=el('<div class="brow" style="justify-content:center"></div>');
   const nr=el('<button class="b-pri">New Round</button>');nr.onclick=beginQuiz;
-  const cf=el('<button class="b-gho">Change Formats</button>');cf.onclick=()=>{S.started=false;render();};
+  const cf=el('<button class="b-gho">Change Topics</button>');cf.onclick=()=>{S.started=false;render();};
   br.appendChild(nr);br.appendChild(cf);card.appendChild(br);
   wrap.appendChild(card);
   return wrap;
