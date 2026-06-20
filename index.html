@@ -421,7 +421,7 @@ function renderQuestion(){
     const iw=el('<div class="qimg-wrap"></div>');
     const img=document.createElement("img");
     img.className="qimg";img.src=cur.image;img.alt="";
-    img.onerror=()=>{iw.innerHTML='<div class="qimg-err">Image couldn\\'t load \u2014 check the Drive link is shared "Anyone with the link".</div>';};
+    img.onerror=()=>{iw.innerHTML='<div class="qimg-err">Image could not load - check the Drive link is shared as Anyone with the link.</div>';};
     iw.appendChild(img);
     card.appendChild(iw);
   }
